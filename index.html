@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus Week05 Homework | Amanda Machado</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f17a491212.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <article>
+      <header>
+        <button class="fahrenheit-switch tunit">˚F</button>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            name="searchcity"
+            class="search-input"
+            id="search-input"
+            placeholder="Search city"
+          />
+          <input type="submit" value="Search" class="search-button" />
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </form>
+        <button class="use-device" id="use-device">
+          <i class="fa-solid fa-location-dot"></i> Use device location
+        </button>
+      </header>
+      <main>
+        <div class="main-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+        <div class="main-text">
+          <h1><span id="temperature"></span> <span class="tunit">˚C</span></h1>
+          <h2 id="city-name"></h2>
+          <div id="weather-description"></div>
+          <h3>
+            <span class="max-temp" id="today-max-temp"></span> |
+            <span class="min-temp" id="today-min-temp"></span>
+          </h3>
+          <div id="current-dayandtime">
+            <small id="current-day"></small>
+            <small id="current-time"></small>
+          </div>
+        </div>
+        <div class="additional-info">
+          <small
+            ><i class="fa-solid fa-droplet"></i> <span id="humidity"></span>% |
+            <i class="fa-solid fa-wind"></i> <span id="windspeed"></span>km/h
+          </small>
+        </div>
+      </main>
+      <section class="week-forecast">
+        <div>
+          <h3>
+            <i class="fa-solid fa-snowflake"></i><br /><span class="max-temp"
+              >39˚</span
+            >
+            | <span class="min-temp">23˚</span>
+          </h3>
+          <h4>tuesday</h4>
+          <small>Snow</small>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-cloud-sun"></i><br />
+            <span class="max-temp">39˚</span> |
+            <span class="min-temp">23˚</span>
+          </h3>
+          <h4>wednesday</h4>
+          <small>Generally Hot</small>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-cloud-sun"></i><br />
+            <span class="max-temp">39˚</span> |
+            <span class="min-temp">23˚</span>
+          </h3>
+          <h4>thursday</h4>
+          <small>Cloudy</small>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-cloud-rain"></i><br />
+            <span class="max-temp">39˚</span> |
+            <span class="min-temp">23˚</span>
+          </h3>
+          <h4>friday</h4>
+          <small>Rain</small>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-sun"></i><br />
+            <span class="max-temp">39˚</span> |
+            <span class="min-temp">23˚</span>
+          </h3>
+          <h4>saturday</h4>
+          <small>Generally Hot</small>
+        </div>
+        <div>
+          <h3>
+            <i class="fa-solid fa-cloud-sun-rain"></i><br />
+            <span class="max-temp">39˚</span> |
+            <span class="min-temp">23˚</span>
+          </h3>
+          <h4>sunday</h4>
+          <small>Rain</small>
+        </div>
+      </section>
+    </article>
+    <footer><small>Coded by Amanda © 2022</small></footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>

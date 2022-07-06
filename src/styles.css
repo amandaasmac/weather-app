@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  font-family: "Poppins", sans-serif;
+  color: #263959;
+  text-align: center;
+  padding: 0 20px;
+}
+
+h1,
+h2 {
+  color: cornflowerblue;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  color: cornflowerblue;
+}
+
+article {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  margin: 30px auto 5px;
+  border-radius: 15px;
+  max-width: 900px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button,
+input[type="submit"] {
+  background-color: cornflowerblue;
+  color: white;
+  border: 1px solid cornflowerblue;
+}
+
+button:hover,
+input[type="submit"]:hover,
+a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.fahrenheit-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  line-height: 1;
+  background-color: white;
+  border: none;
+  color: cornflowerblue;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+  display: flex;
+  margin-block-end: 7px;
+  padding-inline: 15px;
+}
+
+.search-input {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  width: 100%;
+  padding: 12px 6px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid cornflowerblue;
+  border-radius: 7px 0 0 7px;
+}
+
+.search-button {
+  margin-left: -1px;
+  padding: 10px 20px;
+  border-radius: 0 7px 7px 0;
+  font-size: 1.1rem;
+}
+
+.use-device {
+  width: fit-content;
+  align-self: center;
+  border: none;
+  background: transparent;
+  color: cornflowerblue;
+}
+
+.use-device:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-block: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.main-icon {
+  padding-inline: 40px;
+  font-size: 10rem;
+  color: cornflowerblue;
+}
+
+.additional-info {
+  width: 100%;
+  font-size: 0.9rem;
+  padding-inline: 40px;
+}
+
+.max-temp,
+.min-temp {
+  color: cornflowerblue;
+}
+
+.max-temp {
+  font-weight: 600;
+}
+
+.week-forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.week-forecast div {
+  min-width: 80px;
+  padding-block: 30px;
+}
+
+.week-forecast div:hover h3,
+.week-forecast div:hover h4 {
+  color: cornflowerblue;
+}
+
+footer {
+  font-family: "PT Mono", monospace;
+  margin-block-end: 5px;
+}
