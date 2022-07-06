@@ -166,3 +166,7 @@ footer {
   font-family: "PT Mono", monospace;
   margin-block-end: 5px;
 }
+
+footer a {
+  text-decoration: none;
+}
